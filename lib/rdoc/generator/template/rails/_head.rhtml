@@ -3,7 +3,9 @@
   # reloads and losing the context of the panel. Emptying the rel_prefix makes
   # asset paths absolute. This breaks opening the docs locally. Maybe all
   # generated docs should be in the same folder?
-  rel_prefix = ''
+  
+  # Pending for https://github.com/zzak/sdoc/issues/146
+  # rel_prefix = ''
 %>
 <link rel="stylesheet" href="<%= "#{rel_prefix}/css/reset.css" %>" type="text/css" media="screen" data-turbolinks-track="reload" />
 <link rel="stylesheet" href="<%= "#{rel_prefix}/css/panel.css" %>" type="text/css" media="screen" data-turbolinks-track="reload" />
